@@ -1,4 +1,4 @@
-# `@getnotus/eslint-config-base`
+# `@notus/eslint-config-base`
 
 A super-strict TypeScript linting configuration for enforcing best practices.
 
@@ -11,11 +11,11 @@ First, install the needed development dependencies:
 npm install --save-dev typescript @typescript-eslint/parser
 # Ensure ESLint & Prettier are installed
 npm install --save-dev eslint prettier
-# Install plugins used by @getnotus/eslint-config-base
+# Install plugins used by @notus/eslint-config-base
 npm install --save-dev @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-prettier eslint-plugin-jsdoc eslint-plugin-tsdoc eslint-plugin-array-func eslint-plugin-eslint-comments eslint-plugin-node
 
 # Install the Notus ESLint config
-npm install --save-dev @getnotus/eslint-config-base
+npm install --save-dev @notus/eslint-config-base
 ```
 
 ### Usage

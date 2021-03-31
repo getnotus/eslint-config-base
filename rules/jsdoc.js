@@ -269,6 +269,14 @@ module.exports = {
     // Checks that all files have a @file, @fileoverview, or @overview tag.
     // https://github.com/gajus/eslint-plugin-jsdoc#require-file-overview
     'jsdoc/require-file-overview': 'off',
+
+    // Requires that yields are documented.
+    // https://github.com/gajus/eslint-plugin-jsdoc#require-yields
+    'jsdoc/require-yields': 'warn',
+
+    // Ensures that if a @yields is present that a yield (or yield with a value) is present in the function body
+    // https://github.com/gajus/eslint-plugin-jsdoc#require-yields-check
+    'jsdoc/require-yields-check': 'warn',
   },
 
   overrides: [

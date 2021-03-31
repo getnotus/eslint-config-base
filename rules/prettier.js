@@ -53,7 +53,7 @@ module.exports = {
 
     // Some style guides don't allow the use of tab characters at all, including within comments.
     // https://eslint.org/docs/rules/no-tabs
-    'no-tabs': 'warn',
+    'no-tabs': 'off',
 
     // Usually, Prettier takes care of following a maximum line length automatically.
     // However, there are cases where Prettier can’t do anything, such as for long strings, regular expressions and comments.

@@ -120,31 +120,19 @@ module.exports = {
       'warn',
       {
         selector: 'default',
-        format: ['camelCase'],
+        format: ['camelCase', 'snake_case'],
         leadingUnderscore: 'allow',
         trailingUnderscore: 'allow',
       },
-
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE'],
+        format: ['camelCase', 'UPPER_CASE', 'snake_case'],
         leadingUnderscore: 'allow',
         trailingUnderscore: 'allow',
       },
-
       {
         selector: 'typeLike',
         format: ['PascalCase'],
-      },
-      // Enforce that boolean variables are prefixed with an allowed verb.
-      {
-        selector: 'variable',
-        types: ['boolean'],
-        // This isn't really PascalCase, because the prefix gets removed.
-        // So something like "isValidPayID" would get the prefix stripped
-        // and "ValidPayID" is in PascalCase.
-        format: ['PascalCase'],
-        prefix: ['is', 'should', 'has', 'can', 'did', 'does', 'will'],
       },
       // Enforce that type parameters (generics) are prefixed with T
       {
@@ -582,6 +570,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-this.md
     'no-invalid-this': 'off',
     '@typescript-eslint/no-invalid-this': 'error',
+
+    // Disallow function declarations that contain unsafe references inside loop statements
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loop-func.md
+    "no-loop-func": "off",
+    "@typescript-eslint/no-loop-func": ["error"],
 
     'no-loss-of-precision': 'off',
     '@typescript-eslint/no-loss-of-precision': 'error',

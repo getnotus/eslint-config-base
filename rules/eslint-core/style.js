@@ -35,7 +35,11 @@ module.exports = {
 
     // Blacklist certain identifiers to prevent them being used
     // https://eslint.org/docs/rules/id-blacklist
-    'id-blacklist': ['error', 'e', 'cb', 'callback'],
+    'id-blacklist': 'off',
+
+    // disallow specified identifiers
+    // https://eslint.org/docs/rules/id-denylist
+    'id-denylist': 'off',
 
     // this option enforces minimum and maximum identifier lengths
     // (variable names, property names etc.)
