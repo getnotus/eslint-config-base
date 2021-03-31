@@ -1,6 +1,6 @@
 {
   "name": "@notus/eslint-config-base",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Notus's base TS ESLint config, following our styleguide",
   "keywords": [
     "eslint",

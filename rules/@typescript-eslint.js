@@ -160,7 +160,7 @@ module.exports = {
       },
       {
         selector: 'property',
-        format: ['camelCase'],
+        format: ['camelCase', 'snake_case'],
       },
     ],
 
