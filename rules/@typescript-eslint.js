@@ -161,6 +161,8 @@ module.exports = {
       {
         selector: 'property',
         format: ['camelCase', 'snake_case'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
       },
     ],
 
