@@ -321,6 +321,7 @@ module.exports = {
         allowLiterals: 'in-unions-and-intersections',
         allowMappedTypes: 'always',
         allowTupleTypes: 'always',
+        allowGenerics: 'always',
       },
     ],
 
